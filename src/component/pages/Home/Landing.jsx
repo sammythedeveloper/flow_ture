@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { SectionContent } from "./SectionContent";
 import { Companies } from "./Companies";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import Header from "./Header";
+// import Header from "./Header";
 import logoImage from "../../asset/sphereal-logo.svg";
 
 export const navItems = [
@@ -44,8 +44,8 @@ export const loginItems = [
 export const Landing = () => {
   return (
     <>
-      <section className="overflow-x-hidden">
-        <header className=" relative z-40 ">
+      <header className=" sticky top-0 z-40 bg-zinc-900/50 backdrop-blur-lg ">
+      <div className=" container">
           <div className=" h-20 flex justify-between items-center -z-10">
             <div className=" flex gap-4 items-center">
               <Link to={"/dashboard"}>
@@ -57,7 +57,9 @@ export const Landing = () => {
                   }}
                 ></div>
               </Link>
-              <div className="front-extrabold text-2xl">Q&A</div>
+              <div className=" font-heading text-4xl font-bold  ">
+            <h2>Flowture</h2>
+          </div>
             </div>
             <div className="h-full  hidden lg:block ">
               <nav className="h-full">
@@ -79,6 +81,7 @@ export const Landing = () => {
                 </Link>
               ))}
             </div>
+          </div>
           </div>
         </header>
         <div className="w-full px-4 md:px-8 lg:px-16">
@@ -213,7 +216,6 @@ export const Landing = () => {
             </footer>
           </SectionBorder>
         </div>
-      </section>
     </>
   );
 };
