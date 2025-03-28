@@ -54,9 +54,7 @@ export const Header = ({ user }) => {
       ];
 
   return (
-    <>
-      <section className="overflow-x-hidden">
-        <header className="relative z-40">
+      <header className=" sticky top-0 z-40 bg-zinc-900/50 backdrop-blur-lg ">
           <div className="h-20 flex justify-between items-center -z-10">
             <div className="flex gap-4 items-center">
               <Link to="/dashboard">
@@ -92,8 +90,6 @@ export const Header = ({ user }) => {
             </div>
           </div>
         </header>
-      </section>
-    </>
   );
 };
 
