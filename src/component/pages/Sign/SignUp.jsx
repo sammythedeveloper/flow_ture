@@ -2,7 +2,6 @@ import api from "../../../Context/API";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import Header from "../Home/Header";
 import { SectionBorder } from "../Home/SectionBorder";
 import { Planet } from "../Home/Planet";
 import { Orbit } from "../Home/Orbit";
@@ -92,7 +91,6 @@ const SignUp = () => {
 
   return (
     <div className=" text-white md:px-8">
-      <Header />
       <SectionBorder>
         <div className=" relative py-24 md:py-36 lg:py-48 isolate overflow-hidden [mask-image:liner-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
           <div className=" absolute -z-10 inset-0 bg-[radial-gradient(circle_farthest-corner,var(--color-blue-900)_50%,var(--color-indigo-900)_75%,transparent)] [mask-image:radial-gradient(circle_farthest-side,black,transparent)]"></div>

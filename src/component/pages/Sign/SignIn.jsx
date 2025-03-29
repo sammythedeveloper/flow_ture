@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
 import { motion } from "framer-motion";
 import api from "../../../Context/API"; // Assuming you have an api instance
-import Header from "../Home/Header";
 import { Orbit } from "../Home/Orbit";
 import { Planet } from "../Home/Planet";
 import { SectionBorder } from "../Home/SectionBorder";
@@ -69,7 +68,6 @@ const SignIn = () => {
 
   return (
     <div className="md:px-8">
-      <Header />
       <SectionBorder>
       <div className=" relative py-24 md:py-36 lg:py-48 isolate overflow-hidden [mask-image:liner-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
         <div className=" absolute -z-10 inset-0 bg-[radial-gradient(circle_farthest-corner,var(--color-blue-900)_50%,var(--color-indigo-900)_75%,transparent)] [mask-image:radial-gradient(circle_farthest-side,black,transparent)]"></div>
